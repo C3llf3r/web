@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Repuestos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Repuestos para Celulares</h1>
+    <!-- Barra de búsqueda -->
+    <div class="busqueda-container">
+      <input type="text" id="barra-busqueda" placeholder="Buscar productos..." onkeyup="filtrarProductos()">
+    </div>
+  </header>
+
+  <!-- Menú superior -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="apple.html">Apple</a>
+    <a href="samsung.html">Samsung</a>
+    <a href="huawei.html">Huawei</a>
+    <a href="honor.html">Honor</a>
+    <a href="redmi.html">Redmi</a>
+    <a href="xiaomi.html">Xiaomi</a>
+    <a href="realme.html">Realme</a>
+    <a href="infinix.html">Infinix</a>
+    <a href="zte.html">Zte</a>
+    <a href="contactenos.html">Contáctenos</a>
+  </nav>
+
+  <section class="productos" id="productos-container">
+    <!-- Ejemplo de productos -->
+    <div class="producto" data-nombre="Pantalla Samsung S24 Ultra">
+      <img src="img/iphoneXoled.png" alt="Pantalla Samsung S24 Ultra">
+      <h3>Pantalla S24 Ultra</h3>
+      <h4>COD: 1950</h4>
+      <div class="precio">2,300 Bs.-</div>
+      <button onclick="abrirWhatsApp('Pantalla Samsung S24 Ultra')">Comprar</button>
+    </div>
+    <div class="producto" data-nombre="Pantalla Samsung S24">
+        <img src="img/iphoneXoled.png" alt="Pantalla Samsung S24">
+        <h3>Pantalla S24</h3>
+        <h4>COD: 3029</h4>
+        <div class="precio">1,950 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Samsung S24 Ultra')">Comprar</button>
+    </div>
+    <div class="producto" data-nombre="Pantalla iPhone 11 Pro">
+        <img src="img/iphoneXoled.png" alt="Pantalla iPhone 11 Pro">
+        <h3>Pantalla iPhone 11 Pro</h3>
+        <p>Repuesto original para iPhone X.</p>
+        <div class="precio">$120.00</div>
+        <button onclick="abrirWhatsApp('Pantalla iPhone 11 Pro')">Comprar</button>
+      </div>
+      <div class="producto" data-nombre="Pantalla iPhone 11">
+        <img src="img/iphoneXoled.png" alt="Pantalla iPhone 11">
+        <h3>Pantalla iPhone 11</h3>
+        <p>Repuesto original para iPhone X.</p>
+        <div class="precio">$120.00</div>
+        <button onclick="abrirWhatsApp('Pantalla iPhone 11')">Comprar</button>
+      </div>
+    <!-- Agrega más productos aquí -->
+  </section>
+  <section class="productos" id="productos-container">
+    <!-- Ejemplo de productos -->
+    <div class="producto" data-nombre="Pantalla iPhone 11 Pro Max">
+      <img src="img/iphoneXoled.png" alt="Pantalla iPhone 11 Pro Max">
+      <h3>Pantalla iPhone 11 Pro MAx</h3>
+      <p>Repuesto original para iPhone X.</p>
+      <div class="precio">$120.00</div>
+      <button onclick="abrirWhatsApp('Pantalla iPhone 11 Pro Max')">Comprar</button>
+    </div>
+    <div class="producto" data-nombre="Pantalla Samsung S10">
+      <img src="img/samsungS20.png" alt="Pantalla Samsung S10">
+      <h3>Pantalla Samsung S10</h3>
+      <p>Repuesto original para Samsung S20.</p>
+      <div class="precio">$140.00</div>
+      <button onclick="abrirWhatsApp('Pantalla Samsung S10')">Comprar</button>
+    </div>
+    <div class="producto" data-nombre="Pantalla Samsung Note 10">
+        <img src="img/iphoneXoled.png" alt="Pantalla Samsung Note 10">
+        <h3>Pantalla Note 10</h3>
+        <p>Repuesto original para Samsung Note 10</p>
+        <div class="precio">$120.00</div>
+        <button onclick="abrirWhatsApp('Pantalla iPhone X')">Comprar</button>
+      </div>
+      <div class="producto" data-nombre="Pantalla iPhone X">
+        <img src="img/iphoneXoled.png" alt="Pantalla iPhone X">
+        <h3>Pantalla Note 20 Ultra</h3>
+        <p>Repuesto original para iPhone X.</p>
+        <div class="precio">$120.00</div>
+        <button onclick="abrirWhatsApp('Pantalla iPhone X')">Comprar</button>
+      </div>
+    <!-- Agrega más productos aquí -->
+  </section>
+
+  <section class="productos" id="productos-container">
+    <!-- Ejemplo de productos -->
+    <div class="producto" data-nombre="Pantalla iPhone 11 Pro Max">
+      <img src="img/iphoneXoled.png" alt="Pantalla iPhone 11 Pro Max">
+      <h3>Pantalla iPhone 11 Pro MAx</h3>
+      <p>Repuesto original para iPhone X.</p>
+      <div class="precio">$120.00</div>
+      <button onclick="abrirWhatsApp('Pantalla iPhone 11 Pro Max')">Comprar</button>
+    </div>
+    <div class="producto" data-nombre="Pantalla Samsung S10">
+      <img src="img/samsungS20.png" alt="Pantalla Samsung S10">
+      <h3>Pantalla Samsung S10</h3>
+      <p>Repuesto original para Samsung S20.</p>
+      <div class="precio">$140.00</div>
+      <button onclick="abrirWhatsApp('Pantalla Samsung S10')">Comprar</button>
+    </div>
+    <div class="producto" data-nombre="Pantalla iPhone X">
+        <img src="img/iphoneXoled.png" alt="Pantalla iPhone X">
+        <h3>Pantalla Note 10</h3>
+        <p>Repuesto original para iPhone X.</p>
+        <div class="precio">$120.00</div>
+        <button onclick="abrirWhatsApp('Pantalla iPhone X')">Comprar</button>
+      </div>
+      <div class="producto" data-nombre="Pantalla iPhone X">
+        <img src="img/iphoneXoled.png" alt="Pantalla iPhone X">
+        <h3>Pantalla Note 20 Ultra</h3>
+        <p>Repuesto original para iPhone X.</p>
+        <div class="precio">$120.00</div>
+        <button onclick="abrirWhatsApp('Pantalla iPhone X')">Comprar</button>
+      </div>
+    <!-- Agrega más productos aquí -->
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="iconos">
+      <a href="https://facebook.com" target="_blank">🌐</a>
+      <a href="https://instagram.com" target="_blank">📷</a>
+      <a href="https://goo.gl/maps/xVP4t" target="_blank">📍</a>
+    </div>
+    <p>Ubicación: Calle Camargo #516, Sucre, Bolivia</p>
+  </footer>
+
+  <script>
+    // Función para abrir WhatsApp
+    function abrirWhatsApp(producto) {
+      const telefono = "591XXXXXXX"; // Cambia por tu número de WhatsApp
+      const mensaje = `Hola, estoy interesado en el producto: ${producto}`;
+      window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
+    }
+
+    // Función para filtrar productos
+    function filtrarProductos() {
+      const consulta = document.getElementById('barra-busqueda').value.toLowerCase();
+      const productos = document.querySelectorAll('.producto');
+      
+      productos.forEach(producto => {
+        const nombre = producto.getAttribute('data-nombre').toLowerCase();
+        if (nombre.includes(consulta)) {
+          producto.style.display = "block";
+        } else {
+          producto.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

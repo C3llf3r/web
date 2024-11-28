@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sucre BoE Industry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SUCRE BoE INDUSTRY</h1>
+  </header>
+
+  <!-- Menú superior -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="apple.html">Apple</a>
+    <a href="samsung.html">Samsung</a>
+    <a href="huawei.html">Huawei</a>
+    <a href="redmi.html">Redmi</a>
+    <a href="Xiaomi.html">Xiaomi</a>
+    <a href="Realme.html">Realme</a>
+    <a href="Infinix.html">Infinix</a>
+    <a href="contactenos.html">Contáctenos</a>
+  </nav>
+
+  <section class="productos">
+    <!-- Publicidad 1 -->
+    <div class="producto">
+      <img src="img/publi/iphone 2 dic.png" alt="Pantallas de Iphone">
+    </div>
+    <!-- Publicidad 2 -->
+    <div class="producto">
+      <img src="img/publi/samsung nov 5.png" alt="Pantalla Samsung">
+    </div>
+    <!-- Publicidad 3 -->
+    <div class="producto">
+        <img src="img/publi/huawei 4.png" alt="Pantalla iPhone">
+      </div>
+</section>
+
+    <!--Pie de Pagina-->
+  <footer>
+    <div class="iconos">
+      <a href="https://facebook.com" target="_blank">🌐</a>
+      <a href="https://instagram.com" target="_blank">📷</a>
+      <a href="https://goo.gl/maps/xVP4t" target="_blank">📍</a>
+    </div>
+    <p>Ubicación: Calle Camargo #516, Sucre, Bolivia</p>
+  </footer>
+
+  <script>
+    function abrirWhatsApp(producto) {
+      const telefono = "591XXXXXXX"; // Cambia por tu número de WhatsApp
+      const mensaje = `Hola, estoy interesado en el producto: ${producto}`;
+      window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
+    }
+  </script>
+</body>
+</html>
