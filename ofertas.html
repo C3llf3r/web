@@ -141,20 +141,23 @@
       window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
     }
 
-    // Función para filtrar productos
     function filtrarProductos() {
-      const consulta = document.getElementById('barra-busqueda').value.toLowerCase();
-      const productos = document.querySelectorAll('.producto');
-      
-      productos.forEach(producto => {
-        const nombre = producto.getAttribute('data-nombre').toLowerCase();
-        if (nombre.includes(consulta)) {
-          producto.style.display = "block";
-        } else {
-          producto.style.display = "none";
-        }
-      });
+  const consulta = document.getElementById('barra-busqueda').value.toLowerCase();
+  const productos = document.querySelectorAll('.producto');
+  
+  productos.forEach(producto => {
+    const nombre = producto.getAttribute('data-nombre').toLowerCase();
+    if (nombre.includes(consulta)) {
+      producto.style.display = "block";
+    } else {
+      producto.style.display = "none";
     }
+  });
+
+  // Quitar el foco del campo de entrada para ocultar el teclado
+  document.getElementById('barra-busqueda').blur();
+}
+
   </script>
 </body>
 </html>
