@@ -238,4 +238,20 @@ body {
     border-color: #ffc107;
     box-shadow: 0 2px 8px rgba(255, 193, 7, 0.5);
   }
+  /* Estilo para el logo pequeño */
+.logo-pequeno {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle;
+  }
+  
+  /* Estilo para el producto pequeño */
+  .producto-pequeno {
+    width: 450px; /* Ajusta este valor para hacerlo más pequeño */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+  }
   
