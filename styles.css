@@ -262,4 +262,14 @@ body {
     transform: scale(1.1); /* Agranda un poco la imagen al pasar el mouse */
     transition: transform 0.3s ease; /* Suaviza el efecto */
   }
+  .iconos a {
+    color: #000; /* Color de los íconos */
+    font-size: 24px; /* Tamaño de los íconos */
+    margin: 0 10px; /* Espaciado entre íconos */
+    text-decoration: none;
+  }
+  
+  .iconos a:hover {
+    color: #0077cc; /* Cambia el color al pasar el mouse */
+  }
   

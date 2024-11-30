@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sucre BoE Industry</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="img/logosucreboe.png" alt="Logo Sucre BoE Industry" class="logo-pequeno">
+    <img src="img/logos/logosucreboe.png" alt="Logo Sucre BoE Industry" class="logo-pequeno">
   </header>
 
   <!-- Menú superior -->
@@ -29,18 +30,20 @@
 </section>
 
     <!--Pie de Pagina-->
-  <footer>
-    <div class="iconos">
-      <a href="https://facebook.com" target="_blank">🌐</a>
-      <a href="https://instagram.com" target="_blank">📷</a>
-      <a href="https://maps.app.goo.gl/FhLohJVC2xPwyxf79" target="_blank">📍</a>
-    </div>
-    <p>Ubicación: Calle Camargo #516, Sucre, Bolivia</p>
-  </footer>
+    <footer>
+        <div class="iconos">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://maps.app.goo.gl/FhLohJVC2xPwyxf79" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <p>Ubicación: Calle Camargo #516, Sucre, Bolivia</p>
+      </footer>
+      
 
   <script>
     function abrirWhatsApp(producto) {
-      const telefono = "591XXXXXXX"; // Cambia por tu número de WhatsApp
+      const telefono = "59175767894"; // Cambia por tu número de WhatsApp
       const mensaje = `Hola, estoy interesado en el producto: ${producto}`;
       window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
     }
