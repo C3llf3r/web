@@ -125,9 +125,9 @@
   <!-- Pie de página -->
   <footer>
     <div class="iconos">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.facebook.com/share/15DchpSbxg/" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.tiktok.com/@boe.sucre?_t=8rpoCTrjuCe&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
       <a href="https://maps.app.goo.gl/FhLohJVC2xPwyxf79" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
     </div>
     <p>Ubicación: Calle Camargo #516, Sucre, Bolivia</p>
@@ -141,7 +141,19 @@
       window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
     }
 
-    function filtrarProductos() {
+    let tiempoEspera; // Variable para el temporizador
+
+document.getElementById('barra-busqueda').addEventListener('input', () => {
+  clearTimeout(tiempoEspera); // Reinicia el temporizador si el usuario sigue escribiendo
+
+  // Espera 500ms después de que el usuario deja de escribir
+  tiempoEspera = setTimeout(() => {
+    filtrarProductos(); // Llama a la función de filtrado
+    document.getElementById('barra-busqueda').blur(); // Quita el foco del campo de búsqueda
+  }, 1000);
+});
+
+function filtrarProductos() {
   const consulta = document.getElementById('barra-busqueda').value.toLowerCase();
   const productos = document.querySelectorAll('.producto');
   
@@ -153,9 +165,6 @@
       producto.style.display = "none";
     }
   });
-
-  // Quitar el foco del campo de entrada para ocultar el teclado
-  document.getElementById('barra-busqueda').blur();
 }
 
   </script>
