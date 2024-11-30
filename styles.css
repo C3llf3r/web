@@ -254,4 +254,12 @@ body {
     display: block;
     margin: 0 auto; /* Centra la imagen */
   }
+  .producto a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+  }
+  
+  .producto a:hover img {
+    transform: scale(1.1); /* Agranda un poco la imagen al pasar el mouse */
+    transition: transform 0.3s ease; /* Suaviza el efecto */
+  }
   
