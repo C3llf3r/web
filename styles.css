@@ -240,7 +240,7 @@ body {
   }
   /* Estilo para el logo pequeño */
 .logo-pequeno {
-    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    width: 80px; /* Ajusta el tamaño según tus necesidades */
     height: auto;
     display: inline-block;
     margin-right: 30px;
@@ -270,6 +270,6 @@ body {
   }
   
   .iconos a:hover {
-    color: #0077cc; /* Cambia el color al pasar el mouse */
+    color: #f4fcff; /* Cambia el color al pasar el mouse */
   }
-  
+    

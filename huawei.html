@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sucre BoE Industry Huawei</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <img src="img/logos/logosucreboe.png" alt="Logo Sucre BoE Industry" class="logo-pequeno">
+    <!-- Barra de búsqueda -->
+   
+  </header>
+  <div class="busqueda-container">
+    <input type="text" id="barra-busqueda" placeholder="Buscar productos..." onkeyup="filtrarProductos()">
+  </div>
+  <!-- Menú superior -->
+  <nav>
+    <a href="index.html">INICIO</a>
+    <a href="apple.html">APPLE</a>
+    <a href="samsung.html">SAMSUNG</a>
+    <a href="huawei.html">HUAWEI</a>
+    <a href="honor.html">HONOR</a>
+    <a href="redmi.html">REDMI</a>
+    <a href="tecno.html">TECNO</a>
+    <a href="contactenos.html">CONTACTENOS</a>
+  </nav>
+
+   <!-- Ingreso de productos fila 1-->
+  <section class="productos" id="productos-container">
+    <!--Producto 1-->
+    <div class="producto" data-nombre="Pantalla Huawei P40 Lite">
+      <img src="img/huawei/2041 p40 lite.png" alt="Pantalla Huawei P40 Lite">
+      <h3>Pantalla Huawei P40 Lite</h3>
+      <p>COD: 2041</p>
+      <div class="precio">Precio 200.00 Bs.-</div>
+      <button onclick="abrirWhatsApp('Pantalla Huawei P40 Lite')">Reservar</button>
+    </div>
+    <!--Producto 2-->
+    <div class="producto" data-nombre="Pantalla Huawei P30 Lite">
+        <img src="img/huawei/0416 P30 Lite.png" alt="Pantalla Huawei P30 Lite">
+        <h3>Pantalla Huawei P30 Lite</h3>
+        <p>COD: 0416</p>
+        <div class="precio">Precio 190.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Huawei P30 Lite')">Reservar</button>
+    </div>
+    <!--Producto 3-->
+    <div class="producto" data-nombre="Pantalla Huawei P20 Lite">
+        <img src="img/huawei/2372 p20 lite caja.png" alt="Pantalla Huawei P20 Lite">
+        <h3>Pantalla Huawei P20 Lite</h3>
+        <p>COD: 2372</p>
+        <div class="precio">Precio 160.00 Bs.- </div>
+        <button onclick="abrirWhatsApp('Pantalla Huawei P20 Lite')">Reservar</button>
+      </div>
+    <!--Producto 4-->
+    <div class="producto" data-nombre="Pantalla Huawei Mate20 Lite">
+        <img src="img/huawei/0021 mate 20 lite.png" alt="Pantalla Huawei Mate20 Lite">
+        <h3>Pantalla Huawei Mate20 Lite</h3>
+        <p>COD: 0021</p>
+        <div class="precio">Precio 110.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Huawei Mate20 Lite')">Reservar</button>
+      </div>
+  </section>
+
+  <!-- Ingreso de productos fila 2-->
+  <section class="productos" id="productos-container">
+    <!--Producto 1-->
+    <div class="producto" data-nombre="Pantalla Huawei Y9 2019">
+      <img src="img/huawei/0022 Y9 2019.png" alt="Pantalla Huawei Y9 2019">
+      <h3>Pantalla Huawei Y9 2019</h3>
+      <p>COD: 0022</p>
+      <div class="precio">Precio 160.00 Bs.-</div>
+      <button onclick="abrirWhatsApp('Pantalla Huawei Y9 2019')">Reservar</button>
+    </div>
+    <!--Producto 2-->
+    <div class="producto" data-nombre="Pantalla Huawei Y9 Prime">
+        <img src="img/huawei/2221 y9 prime.png" alt="Pantalla Huawei Y9 Prime">
+        <h3>Pantalla Huawei Y9 Prime</h3>
+        <p>COD: 2221</p>
+        <div class="precio">Precio 165.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Huawei Y9 Prime')">Reservar</button>
+    </div>
+    <!--Producto 3-->
+    <div class="producto" data-nombre="Pantalla Huawei Y9S">
+        <img src="img/huawei/2644 HUAWEI Y9S.png" alt="Pantalla Huawei Y9S">
+        <h3>Pantalla Huawei Y9S</h3>
+        <p>COD: 0408</p>
+        <div class="precio">Precio 160.00 Bs.- </div>
+        <button onclick="abrirWhatsApp('Pantalla Huawei Y9S')">Reservar</button>
+      </div>
+    <!--Producto 4-->
+    <div class="producto" data-nombre="Pantalla Huawei Y7 2019">
+        <img src="img/samsung/A50incell.png" alt="Pantalla Huawei Y7 2019">
+        <h3>Pantalla Huawei Y7 2019</h3>
+        <p>COD: 2408</p>
+        <div class="precio">Precio 110.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Huawei Y7 2019')">Reservar</button>
+      </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="iconos">
+      <a href="https://www.facebook.com/share/15DchpSbxg/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/boesucre?igsh=MXh0Z2VrdHdzMG5hMA==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@boe.sucre?_t=8rpoCTrjuCe&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/59175767894" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://maps.app.goo.gl/FhLohJVC2xPwyxf79" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+    <p>Ubicación: Calle Camargo #516, Sucre, Bolivia</p>
+  </footer>
+
+  <script>
+    // Función para abrir WhatsApp
+    function abrirWhatsApp(producto) {
+      const telefono = "59175767894"; 
+      const mensaje = `Hola, quiero hacer una reserva de este producto: ${producto}`;
+      window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
+    }
+
+    let tiempoEspera; 
+
+document.getElementById('barra-busqueda').addEventListener('input', () => {
+  clearTimeout(tiempoEspera); 
+  tiempoEspera = setTimeout(() => {
+    filtrarProductos(); 
+    document.getElementById('barra-busqueda').blur(); 
+  }, 1000);
+});
+
+function filtrarProductos() {
+  const consulta = document.getElementById('barra-busqueda').value.toLowerCase();
+  const productos = document.querySelectorAll('.producto');
+  
+  productos.forEach(producto => {
+    const nombre = producto.getAttribute('data-nombre').toLowerCase();
+    if (nombre.includes(consulta)) {
+      producto.style.display = "block";
+    } else {
+      producto.style.display = "none";
+    }
+  });
+}
+
+  </script>
+</body>
+</html>

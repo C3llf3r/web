@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sucre BoE Industry Tecno</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <img src="img/logos/logosucreboe.png" alt="Logo Sucre BoE Industry" class="logo-pequeno">
+    <!-- Barra de búsqueda -->
+   
+  </header>
+  <div class="busqueda-container">
+    <input type="text" id="barra-busqueda" placeholder="Buscar productos..." onkeyup="filtrarProductos()">
+  </div>
+  <!-- Menú superior -->
+  <nav>
+    <a href="index.html">INICIO</a>
+    <a href="apple.html">APPLE</a>
+    <a href="samsung.html">SAMSUNG</a>
+    <a href="huawei.html">HUAWEI</a>
+    <a href="honor.html">HONOR</a>
+    <a href="redmi.html">REDMI</a>
+    <a href="tecno.html">TECNO</a>
+    <a href="contactenos.html">CONTACTENOS</a>
+  </nav>
+
+   <!-- Ingreso de productos fila 1-->
+  <section class="productos" id="productos-container">
+    <!--Producto 1-->
+    <div class="producto" data-nombre="Pantalla Samsung A10">
+      <img src="img/samsung/Samsung A10 Glass Cambiado.png" alt="Pantalla Samsung A10">
+      <h3>Pantalla Samsung A10</h3>
+      <p>COD: 1328</p>
+      <div class="precio">Precio 150.00 Bs.-</div>
+      <button onclick="abrirWhatsApp('Pantalla Samsung A10')">Reservar</button>
+    </div>
+    <!--Producto 2-->
+    <div class="producto" data-nombre="Pantalla Samsung A30 Oled">
+        <img src="img/samsung/Samsung A30 Oled.png" alt="Pantalla Samsung A30">
+        <h3>Pantalla Samsung A30 Oled</h3>
+        <p>COD: 1636</p>
+        <div class="precio">Precio 200.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Samsung A30 Oled')">Reservar</button>
+    </div>
+    <!--Producto 3-->
+    <div class="producto" data-nombre="Pantalla Samsung A50 Oled">
+        <img src="img/samsung/a50.png" alt="Pantalla Samsung A50 Oled">
+        <h3>Pantalla Samsung A50 Oled</h3>
+        <p>COD: 0410</p>
+        <div class="precio">Precio 300.00 Bs.- </div>
+        <button onclick="abrirWhatsApp('Pantalla Samsung A50 Oled')">Reservar</button>
+      </div>
+    <!--Producto 4-->
+    <div class="producto" data-nombre="Pantalla Samsung A50 Incell">
+        <img src="img/samsung/A50incell.png" alt="Pantalla Samsung A50 Incell">
+        <h3>Pantalla Samsung A50 Incell</h3>
+        <p>COD: 2428</p>
+        <div class="precio">Precio 200.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Samsung A50')">Reservar</button>
+      </div>
+  </section>
+
+<!-- Ingreso de productos fila 2-->
+  <section class="productos" id="productos-container">
+    <!--Producto 5-->
+    <div class="producto" data-nombre="Pantalla Samsung A02">
+      <img src="img/samsung/A02.png" alt="Pantalla Samsung A02">
+      <h3>Pantalla Samsung A02</h3>
+      <p>COD: 3028</p>
+      <div class="precio">Precio 150.00 Bs.-</div>
+      <button onclick="abrirWhatsApp('Pantalla Samsung A02')">Reservar</button>
+    </div>
+    <!--Producto 6-->
+    <div class="producto" data-nombre="Pantalla Samsung A04">
+      <img src="img/samsung/A04.png" alt="Pantalla Samsung A04">
+      <h3>Pantalla Samsung A04</h3>
+      <p>COD: 4043</p>
+      <div class="precio">Precio 150.00 Bs.-</div>
+      <button onclick="abrirWhatsApp('Pantalla Samsung A04')">Reservar</button>
+    </div>
+    <!--Producto 7-->
+    <div class="producto" data-nombre="Pantalla Samsung A01M">
+        <img src="img/samsung/1950 A01M.png" alt="Pantalla Samsung A01M">
+        <h3>Pantalla Samsung A01M</h3>
+        <p>COD: 1950</p>
+        <div class="precio">Precio 140.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Samsung A01M')">Reservar</button>
+      </div>
+    <!--Producto 8-->
+      <div class="producto" data-nombre="Pantalla Samsung A22">
+        <img src="img/samsung/3799 A22 con marco.png" alt="Pantalla Samsung A22">
+        <h3>Pantalla Samsung A22</h3>
+        <p>COD: 3838</p>
+        <div class="precio">Precio 140.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla Samsung A22')">Reservar</button>
+      </div>
+  </section>
+  <!-- Ingreso de productos fila 3-->
+  <section class="productos" id="productos-container">
+    <!--Producto 9-->
+      <div class="producto" data-nombre="Pantalla iPhone X Oled">
+      <img src="img/iphone/iphoneXoled.png" alt="Pantalla iPhone X Oled">
+      <h3>Pantalla iPhone X Oled</h3>
+      <p>COD: 0417</p>
+      <div class="precio">Precio 350.00 Bs.-</div>
+      <button onclick="abrirWhatsApp('Pantalla iPhone X Oled')">Reservar</button>
+    </div>
+    <!--Producto 10-->
+    <div class="producto" data-nombre="Pantalla iPhone XR">
+      <img src="img/iphone/iphone xraltacopia.png" alt="Pantalla iPhone XR">
+      <h3>Pantalla iPhone XR Alta Copia</h3>
+      <p>COD: 0240</p>
+      <div class="precio">Precio 250.00 Bs.-</div>
+      <button onclick="abrirWhatsApp('Pantalla iPhone XR')">Reservar</button>
+    </div>
+    <!--Producto 11-->
+    <div class="producto" data-nombre="Pantalla iPhone 11 Alta Copia">
+        <img src="img/iphone/2436 iphone 11 alta copia caja.png" alt="Pantalla iPhone 11 Alta Copia">
+        <h3>Pantalla iPhone 11 Alta Copia</h3>
+        <p>COD: 2436</p>
+        <div class="precio">Precio 250.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla iPhone 11 Alta Copia')">Reservar</button>
+      </div>
+    <!--Producto -->
+      <div class="producto" data-nombre="Pantalla iPhone XS Oled">
+        <img src="img/iphone/0418 iphone xs oled caja.png" alt="Pantalla iPhone XS Oled">
+        <h3>Pantalla iPhone XS Oled</h3>
+        <p>COD: 0418</p>
+        <div class="precio">Precio 360.00 Bs.-</div>
+        <button onclick="abrirWhatsApp('Pantalla iPhone XS Oled')">Reservar</button>
+      </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="iconos">
+      <a href="https://www.facebook.com/share/15DchpSbxg/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/boesucre?igsh=MXh0Z2VrdHdzMG5hMA==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@boe.sucre?_t=8rpoCTrjuCe&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/59175767894" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://maps.app.goo.gl/FhLohJVC2xPwyxf79" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+    <p>Ubicación: Calle Camargo #516, Sucre, Bolivia</p>
+  </footer>
+
+  <script>
+    // Función para abrir WhatsApp
+    function abrirWhatsApp(producto) {
+      const telefono = "59175767894"; 
+      const mensaje = `Hola, quiero hacer una reserva de este producto: ${producto}`;
+      window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
+    }
+
+    let tiempoEspera; 
+
+document.getElementById('barra-busqueda').addEventListener('input', () => {
+  clearTimeout(tiempoEspera); 
+  tiempoEspera = setTimeout(() => {
+    filtrarProductos(); 
+    document.getElementById('barra-busqueda').blur(); 
+  }, 1000);
+});
+
+function filtrarProductos() {
+  const consulta = document.getElementById('barra-busqueda').value.toLowerCase();
+  const productos = document.querySelectorAll('.producto');
+  
+  productos.forEach(producto => {
+    const nombre = producto.getAttribute('data-nombre').toLowerCase();
+    if (nombre.includes(consulta)) {
+      producto.style.display = "block";
+    } else {
+      producto.style.display = "none";
+    }
+  });
+}
+
+  </script>
+</body>
+</html>
